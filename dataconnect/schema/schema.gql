@@ -1,0 +1,24 @@
+type User @table {
+  email: String!
+  username: String
+  profilePictureUrl: String
+  bio: String
+}
+
+type Movie @table {
+  title: String!
+  releaseDate: Date
+  posterUrl: String
+  trailerUrl: String
+  director: String
+  synopsis: String
+}
+
+type Watchlist @table {
+  user: User!
+  movie: Movie!
+  addedDate: Timestamp
+  watchedDate: Timestamp
+  rating: Int
+  review: String
+}
