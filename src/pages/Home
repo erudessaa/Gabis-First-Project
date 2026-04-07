@@ -1,0 +1,10 @@
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <p>My first page is working!</p>
+    </div>
+  );
+}
+
+export default Home;
